@@ -74,6 +74,9 @@ module.exports =
         clearInterval(currDeck.intervalID)
         currDeck.fixTime = 0
         currDeck.timer = false
+        currDeckArr = @state.deckArray
+        @setState
+          deckArray: currDeckArr
     refreshTime: (deckNo) ->
       time = @state.deckArray[deckNo].fixTime
       time++
