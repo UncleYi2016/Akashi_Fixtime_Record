@@ -1,0 +1,73 @@
+{
+  "_args": [
+    [
+      "poi-plugin-exp-calc",
+      ""
+    ]
+  ],
+  "_cnpm_publish_time": 1452252564293,
+  "_from": "poi-plugin-exp-calc@latest",
+  "_id": "poi-plugin-exp-calc@1.2.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/poi-plugin-exp-calc",
+  "_nodeVersion": "5.2.0",
+  "_npmUser": {
+    "email": "poooipoi@126.com",
+    "name": "letspoi"
+  },
+  "_npmVersion": "3.5.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "poi-plugin-exp-calc",
+    "raw": "poi-plugin-exp-calc",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/poi-plugin-exp-calc/download/poi-plugin-exp-calc-1.2.3.tgz",
+  "_shasum": "192181ce472095368976679253180402a996ea50",
+  "_shrinkwrap": null,
+  "_spec": "poi-plugin-exp-calc",
+  "_where": "",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/poooi/plugin-exp-calculator/issues"
+  },
+  "dependencies": {},
+  "description": "Calculate experience value.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "noattachment": false,
+    "shasum": "192181ce472095368976679253180402a996ea50",
+    "size": 6217,
+    "tarball": "http://registry.npm.taobao.org/poi-plugin-exp-calc/download/poi-plugin-exp-calc-1.2.3.tgz"
+  },
+  "gitHead": "91c11d7ce2e9699381bc3d0f35a7afe2a9157042",
+  "homepage": "https://github.com/poooi/plugin-exp-calculator#readme",
+  "license": "MIT",
+  "main": "index.cjsx",
+  "maintainers": [
+    {
+      "name": "letspoi",
+      "email": "poooipoi@126.com"
+    }
+  ],
+  "name": "poi-plugin-exp-calc",
+  "optionalDependencies": {},
+  "publish_time": 1452252564293,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poooi/plugin-exp-calculator.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.2.3"
+}

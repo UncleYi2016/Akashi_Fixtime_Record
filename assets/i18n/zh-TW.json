@@ -1,0 +1,20 @@
+{
+  "Basic": "基礎",
+  "Flagship": "旗艦",
+  "MVP": "MVP",
+  "MVP and flagship": "MVP和旗艦",
+  "Exp calc": "經驗值計算",
+  "Exp calculator": "Exp calculator",
+  "Ship": "艦娘",
+  "NULL": "空",
+  "Map": "海域",
+  "Result": "結果",
+  "Actual level": "目前等級",
+  "To next": "距離下一級",
+  "Goal": "目標等級",
+  "Total exp": "合計經驗值",
+  "Per attack": "每場經驗值",
+  "Remainder": "剩餘場數",
+  "Exp": "演習經驗",
+  "+ %s for each fleet": "諸艦隊練巡加成: %s"
+}
