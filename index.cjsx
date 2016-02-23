@@ -45,10 +45,10 @@ module.exports =
   reactClass: React.createClass
     getInitialState: ->
       deckArray: [
-        {deckNo: 0, isAkashiFlagShip: false, fixTime: 0, deck: [], intervalID: null, testAkashi: testAkashi},
-        {deckNo: 1, isAkashiFlagShip: false, fixTime: 0, deck: [], intervalID: null, testAkashi: testAkashi},
-        {deckNo: 2, isAkashiFlagShip: false, fixTime: 0, deck: [], intervalID: null, testAkashi: testAkashi},
-        {deckNo: 3, isAkashiFlagShip: false, fixTime: 0, deck: [], intervalID: null, testAkashi: testAkashi},
+        {deckNo: 0, isAkashiFlagShip: false, fixTime: 0, deck: [], intervalID: null, timer: false, testAkashi: testAkashi},
+        {deckNo: 1, isAkashiFlagShip: false, fixTime: 0, deck: [], intervalID: null, timer: false, testAkashi: testAkashi},
+        {deckNo: 2, isAkashiFlagShip: false, fixTime: 0, deck: [], intervalID: null, timer: false, testAkashi: testAkashi},
+        {deckNo: 3, isAkashiFlagShip: false, fixTime: 0, deck: [], intervalID: null, timer: false, testAkashi: testAkashi},
       ]
     handleResponse: (e) ->
       {method, path, body, postBody} = e.detail
@@ -66,11 +66,14 @@ module.exports =
     start: (deckNo) ->
       currDeck = @state.deckArray[deckNo]
       if currDeck.isAkashiFlagShip == true
-        currDeck.intervalID = setInterval(@refreshTime, 1000, deckNo)
-        return
+        if currDeck.timer == false
+          currDeck.intervalID = setInterval(@refreshTime, 1000, deckNo)
+          currDeck.timer = true
+          return
       else
         clearInterval(currDeck.intervalID)
         currDeck.fixTime = 0
+        currDeck.timer = false
     refreshTime: (deckNo) ->
       time = @state.deckArray[deckNo].fixTime
       time++
