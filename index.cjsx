@@ -28,9 +28,8 @@ window.addEventListener 'layout.change', (e) ->
 
 testAkashi = (e) -> 
   flagShip = this.deck[0]
-  if typeof(flagShip) != "undefinded"
-  	if flagShip.api_sortno == 187 || flagShip.api_sortno == 182
-    	this.isAkashiFlagShip = true
+  if typeof(flagShip) != "undefinded" && (flagShip.api_sortno == 187 || flagShip.api_sortno == 182)
+    this.isAkashiFlagShip = true
   else
     this.isAkashiFlagShip = false
   return
