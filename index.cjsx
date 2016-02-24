@@ -1,4 +1,4 @@
-path = require 'path-extra'
+﻿path = require 'path-extra'
 {relative, join} = require 'path-extra'
 {$, _, $$, React, ReactBootstrap, FontAwesome, ROOT, layout} = window
 {_ships, $ships, $shipTypes} = window
@@ -35,13 +35,13 @@ testAkashi = (e) ->
   return
 
 module.exports =
-  name: 'ExpCalcView'
+  name: 'AkashiFixTime'
   priority: 2
   displayName: <span><FontAwesome key={0} name='calculator' />Test</span>
   description: __("Exp calculator")
-  author: 'Chiba'
-  link: 'https://github.com/Chibaheit'
-  version: '1.2.3'
+  author: 'UncleYi'
+  link: 'https://github.com/yizhaopu'
+  version: '0.0.1'
   reactClass: React.createClass
     getInitialState: ->
       deckArray: [
